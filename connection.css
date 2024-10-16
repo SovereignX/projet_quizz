@@ -1,0 +1,150 @@
+/* ========================================================\\Header//======================================================= */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* le header */
+header{
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+/* logo */
+#logo{
+    width: 10vw;
+    border-right:solid black 3px;
+    width: 6vw;
+    padding: 10px;
+    margin-top: 7px;
+}
+
+/* le titre de la page */
+h1{
+    color: white;
+    font-size: 3vw;
+    font-family: Verdana;
+    text-shadow:4px 4px 4px #7474BF;
+}
+
+#profil{
+    width: 10vw;
+    border-left:solid black 3px;
+    width: 6vw;
+    padding: 10px;
+    margin-top: 7px;
+}
+hr{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ====================================================\\Formulaire//======================================================= */
+
+/* partie principale de la page  */
+main{
+    display: flex;
+    justify-content: space-around;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+
+form{
+    margin-top: 9vh;
+    margin-bottom: 9vh;
+    padding: 0;
+    font-family: Verdana;
+}
+
+/* les titres des cardre (connexion et inscription) */
+h2{
+    color: white;
+    font-size: 3vh;
+    text-align: center;
+    text-shadow:3px 3px 3px #7474BF;
+}
+
+label{
+    color: white;
+}
+
+/* les cadres (connexion et inscription) */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    margin: 5px;
+    border: solid rgba(60, 80, 190,0.6) 6px;
+    box-shadow: 4px 4px 6px grey;
+    border-radius: 10px;
+    background-position: center center;
+    background-color: #2597e9;
+    background-image: linear-gradient(225deg, #2597e9 0%, #80D0C7 100%);
+}
+
+.input{
+    width: 20vw;
+    height: 2vh;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* bonton de validation des cadre */
+button{
+    background-image: linear-gradient(to right, #7474BF 0%, #348AC7  51%, #7474BF  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px #eee;
+    border: unset;
+    border-radius: 10px;
+    display: block;
+}
+
+button:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+} 
+
+/* ========================================================\\Footer//======================================================= */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh;
+    height: 5vh;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+/* les href sans la fonction souligner  */
+a{
+    text-decoration: none;
+    align-self: center;
+}
+
+/* les bouton de bas de page */
+h4{
+    font-family: verdana;
+    color: white;
+    text-shadow:3px 3px 3px #7474BF;
+}
+h4:hover{
+    background-color: #a3a3d4;
+    border-radius: 5px;
+    padding: 3px;
+}

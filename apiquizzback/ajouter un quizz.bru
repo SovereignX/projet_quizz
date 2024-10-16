@@ -1,0 +1,35 @@
+meta {
+  name: ajouter un quizz
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://quizz.adrardev.fr/api/quizz
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mjc5NDcwNTQsImV4cCI6MTcyNzk1MDY1NCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidGVzdEB0ZXN0LmNvbSJ9.U9aGqGfN9DZU-HVaaPtmiWj90Uifi3nzIJhJPROPOhqMOOlLUagJ-XGZI5hsTU-385_uGTlHyfgF7GCmPTQmCwMpxlLZuXfEWAlgP-uS5nYCooYisxrdBJazblI4_aRjyNAnetiLZgAMCdFB5Sv9Fa2hm1acol2WLvdBKvuEZQ5Eg7r3t6K__Zkp6MmmCkzNWP-eqRtKs3GyiNbObOd7jGaMaIA_NR2fkC6J_NihqWXpib3UIRZJ6y3DoQ1yQdwDev8prMOSeiTOv6v53iMXlxLtIT6Ptik8SuO2HmfmnT5DSFo7tnJHMqETarVyvlKYh5PEXpSgSDpDsWbFwJGr420aggrLrcxdtrljUilUsA3npvzkJI6zR1w49ifSMErzy9zxK0gH9eKJfkvOiUNqk0p4L4BE3EB6clu9wffDN2IjIK3aUFhRHDj8wbXb5d_sQRdn5Vkt46WgnSSRWAFICu15R14N-ke_rVRvU-cJQJpQ9iy8HRNkG75jEIM5QXzHgm4cm4xvAXmokM6JLRvdAFm7nRlgFpWqQaUCV3xp8WFL-c0BJ3c9OHBVYLKVK15DM8OfG9nrYVJpOeDW8LFfS7uIq-uQXjitT3rdcSHG7pZ1SYnEpz4fMw9b5s57iFNmLOOX6xDYzxBiZOiruqmiKjSVsUZCcYwPrKyoO3_rKMA
+}
+
+auth:basic {
+  username: 
+  password: 
+}
+
+auth:bearer {
+  token: 
+}
+
+body:json {
+  {
+    "title":"test",
+    "description":"value",
+    "categories":[
+      {"id":1},
+      {"id":6}
+    ]
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "name": "apiquizzback",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "Afficher la liste des catégories",
+      "seq": 8,
+      "request": {
+        "url": "https://quizz.adrardev.fr/category/all",
+        "method": "GET",
+        "headers": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "ajouter categorie",
+      "seq": 3,
+      "request": {
+        "url": "https://quizz.adrardev.fr/api/category",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mjg0NjE3NjUsImV4cCI6MTcyODQ2NTM2NSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbUB0ZXN0LmNvbSJ9.Um5caJ-9CEnr9OPmP7TmSiJsEMiQaWXRNJQKr3oPsdjycQ73KzRNwBoZ6J5pEFvVpsN3dmlAYadbDamg1bGql-Tj9KvT4T5_dbeMF1qSKg3Av2D7u3LeHOroXMWDLtMYU3NRrhSl8agdqkGYyob-7VM-WGXYUJ4-QpTwzzN412nmbnPQ-K86Y0cVNP5ScF2ZJKNIARyCMn5Scl61mghs5ETUVtgL0l3Mhs0X_VVMi8NwR_lrHKK-yMRgdqW6tNYRHWGhuKxYHbZalOxKWsOJwjNMB4-1gy91DqnjgbErGJu2ohRgCj8NsaX1e3qYwW7UbGGXxYFtmmC6san82YA9YvYVUMskFDMW22e3Fxy8t4lyWT7Sz_EsN-LywJum9p9jW4VbW2qPfk1ln4e1HWG9USpVOBrt_vj9KzUR3WRsoUpRCRp2lxgFBOCcH2qjNNIFFZGqnFXtVTekckDZMNDizmJE9DYzr96OrJ0OyjMI4VWn8_Xydd8O0hBjSWgqqtly7ytW-MS5DHHX97DwjnJnqHOFTDYMi2p_zs8Fo4TD6HSf8MNB1zMSM-RuFD9c_Aua4ffMo_40TKqifq7yZAdAkKWOqQZWNjbaAFHk03RRq4SEWFK7WkTtmD4G31mBfvB4sifomnHAJwOWtv7zzhMkRUh5ptlX-QI69w6jTQmI2D8",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"title\":\"Actualite\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "Ajouter un compte",
+      "seq": 5,
+      "request": {
+        "url": "https://quizz.adrardev.fr/api/user",
+        "method": "POST",
+        "headers": [],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"firstname\":\"Prénom\",\n  \"lastname\":\"Nom\",\n  \"email\":\"email2@mail.com\",\n  \"password\":\"password\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "ajouter un quizz",
+      "seq": 2,
+      "request": {
+        "url": "https://quizz.adrardev.fr/api/quizz",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mjc5NDcwNTQsImV4cCI6MTcyNzk1MDY1NCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidGVzdEB0ZXN0LmNvbSJ9.U9aGqGfN9DZU-HVaaPtmiWj90Uifi3nzIJhJPROPOhqMOOlLUagJ-XGZI5hsTU-385_uGTlHyfgF7GCmPTQmCwMpxlLZuXfEWAlgP-uS5nYCooYisxrdBJazblI4_aRjyNAnetiLZgAMCdFB5Sv9Fa2hm1acol2WLvdBKvuEZQ5Eg7r3t6K__Zkp6MmmCkzNWP-eqRtKs3GyiNbObOd7jGaMaIA_NR2fkC6J_NihqWXpib3UIRZJ6y3DoQ1yQdwDev8prMOSeiTOv6v53iMXlxLtIT6Ptik8SuO2HmfmnT5DSFo7tnJHMqETarVyvlKYh5PEXpSgSDpDsWbFwJGr420aggrLrcxdtrljUilUsA3npvzkJI6zR1w49ifSMErzy9zxK0gH9eKJfkvOiUNqk0p4L4BE3EB6clu9wffDN2IjIK3aUFhRHDj8wbXb5d_sQRdn5Vkt46WgnSSRWAFICu15R14N-ke_rVRvU-cJQJpQ9iy8HRNkG75jEIM5QXzHgm4cm4xvAXmokM6JLRvdAFm7nRlgFpWqQaUCV3xp8WFL-c0BJ3c9OHBVYLKVK15DM8OfG9nrYVJpOeDW8LFfS7uIq-uQXjitT3rdcSHG7pZ1SYnEpz4fMw9b5s57iFNmLOOX6xDYzxBiZOiruqmiKjSVsUZCcYwPrKyoO3_rKMA",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"title\":\"test\",\n  \"description\":\"value\",\n  \"categories\":[\n    {\"id\":1},\n    {\"id\":6}\n  ]\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "ajouter une question",
+      "seq": 4,
+      "request": {
+        "url": "https://quizz.adrardev.fr/api/question",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mjg5MjE5NDEsImV4cCI6MTcyODkyNTU0MSwicm9sZXMiOlsiUk9MRV9VU0VSIiwiUk9MRV9BRE1JTiJdLCJ1c2VybmFtZSI6ImFkbUB0ZXN0LmNvbSJ9.UKT--OvRwpujBgxqKt4fQrBEXqZCjCYLvKf8n4o3ybkHNv-KEMY9o5DT6Of3p9VjAGMeI2n5K8AcRAFgVT6g0VVnboaJkn7EhmfVYHg_0eedUzi74D2HW2iUJEY9h6ceb5tJxxB6tAx8A_hC7rFHkSQscZzQgjHpC9PlH5dVrncQhm7_6jnrcM9yiOJCJA7TGNDf8su0eUJT-Gr2qG3HzzMhdPrfubl3NV7tNCloJGXla_G8U_5LnS_nfWPJXiBG54DvOYnbO_QWmuJ9n3Cvh-4HB6gNyBY9gtRrJHaC4AybqFudM7O838Xmu8Dd4FJA0DAvSAFxfANPkFv3-_HPHPSp9NEKP49K_jP64_bEVwZbQfNmIkObDBtdiqi-S4CD1W3sBOCgC_3bGafrFrU9sUc7HpU4nbhShmV-4Q2NMF_YS0bwNZYD0qpgjptOi0XG0tCoz12wiHshbPrqnkvD_j74Wa_pdJDu25UT6483BOWagVxM_TZ91qwEeWB43OI_-Ec8T0eUR2f3OT8nkK4sJFHLM45LjSs2R3Q5DgwGso15s8dJcbUGUT4wjfEPX9xLaMDG3eACHZklZPexIBVPIdkK3wMpogkzSk-9YoC-q8lN6UTVJ1UfD3Ne769587Gu39Z1K0KJP832aJybg85dnNVS_-hYe8-7-9d2OxUbQJA",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"title\":\"question 1\",\n  \"description\":\"1 question du quiz\",\n  \"pointNumber\":2,\n  \"answers\":[\n    {\"text\":\"reponse 1\", \"valid\":true},\n    {\"text\":\"reponse 2\", \"valid\":false}\n  ]\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "Liste des comptes",
+      "seq": 6,
+      "request": {
+        "url": "https://quizz.adrardev.fr/api/users",
+        "method": "GET",
+        "headers": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "login api",
+      "seq": 1,
+      "request": {
+        "url": "https://quizz.adrardev.fr/api/login_check",
+        "method": "POST",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "enabled": false
+          }
+        ],
+        "body": {
+          "mode": "json",
+          "json": "{\n  \"username\": \"adm@test.com\",\n  \"password\": \"password\"\n}",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "bearer",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": "bearer \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mjc5NDE0MDksImV4cCI6MTcyNzk0NTAwOSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidGVzdEB0ZXN0LmNvbSJ9.aoPcIeID83PGc49PFFYM8HkXpw_WlYtYRLIxBvbx8m13dj_jdBMTqVEwMLkQHo-lCZCu40wn8TrSAV5G0N93aoQ05-9JlUXUwIUADrmj0yXw7BNss62dowvfUoIsqeX7YniZXH7VLA0bfPBDEjP-6GR_AAYNn5_N-vtFyMg1-VXIIMCzhb0-S86it2dQ_I1sxbMlZPvSdrSuFh-D8wArYFylWsh5OVNwrKqaXY024T6jj3JmpYNxrFZxhKwfAOnyzApq8QlyVpddTmh9D7CPL9NyCPYEt-i0xZ48DN0IwLJxkv3mHRifvb9CSOEzuNdFC1pfsFca6VT1VwHQHjJb0DlUqOPwZqOXe14mOV_utYdO3z4jVBcj9BU0FTERKTR4q4aUbMh9rCQG-64b6KRQGVx_NXW-DjDDlcjM_aGXmuYQewN5IanNASbAjnYT9D6YcNhvM8r_IDHzf_9Q2WCx1FiqoVOKDZF1-uujTwfm8IqFOEY19b0lRxyD4iHqxvEoE-RzDUY-NYvRZ9hpHGemwJe-b8Q4cO4LwFLqemfNiyxu2AFsywWaj7mewiivprK0JX4nsjBN5nNSKAjYQvWFAiT5w4C4WAvM32oHNkami4TCU49Hs3a9eWWgJz4-idtjhNWlg2UwqpJ-poafk0otsSoGwfaIxxE0ZB2gMQ8lRUg\""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "mon compte",
+      "seq": 9,
+      "request": {
+        "url": "https://quizz.adrardev.fr/api/me",
+        "method": "GET",
+        "headers": [
+          {
+            "name": "Authorization",
+            "value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3MjgwMzQxODQsImV4cCI6MTcyODAzNzc4NCwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidGVzdEB0ZXN0LmNvbSJ9.aGuaDZHT_vSmadjwtq6DR9yDJOrOmvR5j1L-HjSmV-P0DqX9NjB0xLspyI7gCS9yaJy9WBf56vKzxnWPdB8t5_Lap6CF4rNRdrQyaLRMUl734m-HqAoGpGejBd0iM7LSRhj7pfLOsU1Ws1_bF9LEbCyVh5crLVtJCRIxW50OWMQhOEiugao8JpNEvEnfUu602VgFhe3NKLsCCbRrE3l9eVAWSzqNjBXXX5gz5Gc7TkQHobo20qwVjCeMuea50a3e6leWf1g-eb90LSzKmk3i2A8l0xZy05qsw1J2vqpleo5U82P9HdqIzACohqmosaaCZerBkxrqrzzsz5uS6g-wjxYZiJ97UJCkxq8_u2XvcaQ6mXBr_7nbmDH9sWBwduPg-Vd0tXu2i7P8cCgBUg393kfGiI6rjX-IGM4IDOSRrCvhzKsH37Lg-Ky1RBkF8NcHNR2qyxsn5JpBUwtP-WCke55EiV45kjyigauStdmRrODHKZp0C64WNeHsLzeWWEbxBMMm2Of6gPQ1iBt5kJMvHyUiXdB4cB4d0kuITbwSukCenuJqP57w4KsKZ9fHr4Yj0xKgZh5vraLqMRHjyNlvJbe1oeIxjeWJ-te1Na-djzmr_F7Xed0A6VESIMbSEJMGAza_XQ-Zju_uzVJc_kctmsvZgsEgBVxYWivsK2RnezY",
+            "enabled": true
+          }
+        ],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "http",
+      "name": "toute les questions",
+      "seq": 11,
+      "request": {
+        "url": "https://quizz.adrardev.fr/api/question/all",
+        "method": "GET",
+        "headers": [],
+        "body": {
+          "mode": "none",
+          "formUrlEncoded": [],
+          "multipartForm": []
+        },
+        "auth": {
+          "mode": "none",
+          "basic": {
+            "username": "",
+            "password": ""
+          },
+          "bearer": {
+            "token": ""
+          }
+        },
+        "script": {},
+        "vars": {},
+        "assertions": [],
+        "tests": "",
+        "query": []
+      }
+    },
+    {
+      "type": "json",
+      "name": "bruno",
+      "seq": 1
+    }
+  ],
+  "environments": [
+    {
+      "variables": [
+        {
+          "name": "token",
+          "value": "00000",
+          "enabled": false,
+          "secret": false,
+          "type": "text"
+        }
+      ],
+      "name": "mathieu"
+    }
+  ]
+}

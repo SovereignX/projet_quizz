@@ -1,0 +1,31 @@
+meta {
+  name: login api
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://quizz.adrardev.fr/api/login_check
+  body: json
+  auth: bearer
+}
+
+headers {
+  ~Content-Type: application/json
+}
+
+auth:basic {
+  username: 
+  password: 
+}
+
+auth:bearer {
+  token: bearer "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3Mjc5NDE0MDksImV4cCI6MTcyNzk0NTAwOSwicm9sZXMiOlsiUk9MRV9VU0VSIl0sInVzZXJuYW1lIjoidGVzdEB0ZXN0LmNvbSJ9.aoPcIeID83PGc49PFFYM8HkXpw_WlYtYRLIxBvbx8m13dj_jdBMTqVEwMLkQHo-lCZCu40wn8TrSAV5G0N93aoQ05-9JlUXUwIUADrmj0yXw7BNss62dowvfUoIsqeX7YniZXH7VLA0bfPBDEjP-6GR_AAYNn5_N-vtFyMg1-VXIIMCzhb0-S86it2dQ_I1sxbMlZPvSdrSuFh-D8wArYFylWsh5OVNwrKqaXY024T6jj3JmpYNxrFZxhKwfAOnyzApq8QlyVpddTmh9D7CPL9NyCPYEt-i0xZ48DN0IwLJxkv3mHRifvb9CSOEzuNdFC1pfsFca6VT1VwHQHjJb0DlUqOPwZqOXe14mOV_utYdO3z4jVBcj9BU0FTERKTR4q4aUbMh9rCQG-64b6KRQGVx_NXW-DjDDlcjM_aGXmuYQewN5IanNASbAjnYT9D6YcNhvM8r_IDHzf_9Q2WCx1FiqoVOKDZF1-uujTwfm8IqFOEY19b0lRxyD4iHqxvEoE-RzDUY-NYvRZ9hpHGemwJe-b8Q4cO4LwFLqemfNiyxu2AFsywWaj7mewiivprK0JX4nsjBN5nNSKAjYQvWFAiT5w4C4WAvM32oHNkami4TCU49Hs3a9eWWgJz4-idtjhNWlg2UwqpJ-poafk0otsSoGwfaIxxE0ZB2gMQ8lRUg"
+}
+
+body:json {
+  {
+    "username": "adm@test.com",
+    "password": "password"
+  }
+}

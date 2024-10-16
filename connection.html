@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connection</title>
+    <link rel="stylesheet" href="connection.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="./imageHeader/logoV5.png" alt="" id="logo">
+        </div>
+
+        <h1>Bienvenue sur ADRAR Quizz</h1>
+
+        <div>
+            <img src="./imageHeader/profile.png" alt="" id="profil">
+        </div>
+    </header>
+    <hr size="4px" color="black">
+<!--==============================================\\formulaires//========================================================= -->
+
+<main>
+
+    <!-- ============================\\Formulaire connexion//======================== -->
+    <form id="connexion">
+
+    <!-- titre de page -->
+        <h2>Connexion</h2>
+
+        <section>
+
+            <!-- Email  -->
+            <label for="email-connection"><h3>Email</h3></label>
+            <input name="email-connection" type="email" minlength="2" maxlength="30" placeholder="ex : Jean.Bon@gmail.com" class="input">
+
+            <!-- Mot de passe  -->
+            <label for="mdp-connection"><h3>Mot de passe</h3></label>
+            <input name="mdp-connection" type="password" minlength="2" maxlength="15" placeholder="ex : *******" class="input">
+            <p id="erreurConnect"></p>
+
+        <!-- bouton validation -->
+            <button type="submit" id="btn-Conect">Connection</button>
+
+        </section>
+    </form>
+
+
+<!-- ============================\\Formulaire inscription//======================== -->
+    <form id="inscription">
+
+        <!-- titre de page -->
+        <h2>Inscription</h2>
+        <section>
+            <!-- Prénom  -->
+            <label for="prenom"><h3>Prénom</h3></label>
+            <input name="prenom" type="text" minlength="2" maxlength="20" placeholder="ex : Jean" class="input">
+
+            <!-- Nom  -->
+            <label for="nom"><h3>Nom</h3></label>
+            <input name="nom" type="text" minlength="2" maxlength="25" placeholder="ex : Bon" class="input">
+
+            <!-- Email  -->
+            <label for="email"><h3>Email</h3></label>
+            <input name="email_inscription" type="email" minlength="2" maxlength="30" placeholder="ex : Jean.Bon@gmail.com" class="input">
+
+            <!-- Mot de passe  -->
+            <label for="mdp"><h3>Mot de passe</h3></label>
+            <input name="mdp_inscription" type="password" minlength="2" maxlength="15" placeholder="ex : *******" class="input">
+
+            <!-- Confirme le Mot de passe  -->
+            <label for="mdp"><h3> Confirme mot de passe</h3></label>
+            <input name="mdp2" type="password" minlength="2" maxlength="15" placeholder="ex : *******" class="input">
+            <p id="erreurConnect"></p>
+
+            <!-- bouton validation -->
+            <button type="submit" id="btn-inscription">Inscription</button>
+        </section>
+    </form>   
+</main>
+<hr size="4px" color="black">
+<footer>
+    <a href=""><h4>Contact</h4></a>
+    <a href=""><h4>CGU</h4></a>
+</footer>
+
+
+    <script src="connectCompte.js"></script>
+</body>
+</html>
